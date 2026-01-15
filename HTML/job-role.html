@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Roles</title>
+
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/job-role.css">
+</head>
+<body>
+
+<header id="header">
+    <h1>PlacementTracker</h1>
+    <input type="search" id="searchRole" placeholder="Search job role">
+    <nav id="navlinks">
+        <a href="../index.html">Home</a>
+        <a href="../HTML/college.html">Colleges</a>
+        <a href="../HTML/students.html">Students</a>
+        <a href="../HTML/companies.html">Companies</a>
+        <a href="../HTML/job-role.html" class="active">Job Roles</a>
+    </nav>
+</header>
+
+<section id="role-container"></section>
+
+<!-- i want to add a button to add new job roles -->
+<div id="button-group">
+    <button id="add_role">Add New Job Role</button>
+</div> 
+
+<!-- Add Job Role Modal -->
+<div id="roleModal" class="modal">
+  <div class="modal-content">
+    <h3>Add Job Role</h3>
+
+    <input type="text" id="roleId" placeholder="Role ID (e.g. ROLE005)">
+    <input type="text" id="roleTitle" placeholder="Job Role Title">
+
+    <div class="modal-actions">
+      <button id="saveRole">Save</button>
+      <button id="closeModal">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+<script src="../JS/api.js"></script>
+<script src="../JS/job-role.js"></script>
+</body>
+</html>

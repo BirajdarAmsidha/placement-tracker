@@ -1,0 +1,213 @@
+/* Container */
+#college-container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+/* College Card */
+.college-card {
+    background: linear-gradient(145deg, #ffffff, #f0f4f8);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.college-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* College Title */
+.college-card h2 {
+    color: #1f7f7a;
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+/* Info Grid */
+.college-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+    font-size: 14px;
+}
+
+.college-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.college-info span {
+    font-weight: 600;
+    color: #555;
+    font-size: 13px;
+}
+
+.college-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Full width info */
+.full-width {
+    grid-column: span 2;
+}
+
+/* Departments container */
+.dept-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+/* Department chips */
+.dept-chip {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #1f7f7a33;
+    color: #1f7f7a;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.dept-chip:hover {
+    transform: scale(1.05);
+    background: #1f7f7a55;
+}
+
+/* Add Button */
+.add-button {
+    padding: 14px 28px;
+    font-size: 16px;
+    background: #1f7f7a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    margin: 20px auto;
+    display: block;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+    background: #155f5b;
+    transform: translateY(-2px);
+}
+
+/* Modal Overlay */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Box */
+.modal-content {
+    background: #ffffff;
+    padding: 30px 25px;
+    width: 420px;
+    border-radius: 16px;
+    text-align: center;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-content input:focus {
+    border-color: #1f7f7a;
+    box-shadow: 0 0 8px rgba(31,127,122,0.2);
+    outline: none;
+}
+
+/* Modal buttons */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.save-btn, .close-btn {
+    padding: 12px;
+    width: 48%;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.save-btn {
+    background: #28a745;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.close-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.close-btn:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Card action buttons */
+.edit-btn, .delete-btn {
+    padding: 6px 12px;
+    margin-left: 6px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.edit-btn {
+    background: #007bff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #0069d9;
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+}

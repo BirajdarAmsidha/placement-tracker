@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Companies</title>
+
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/companies.css">
+</head>
+<body>
+
+    <header id="header">
+        <h1>PlacementTracker</h1>
+        <input type="search" placeholder="search company">
+        <nav id="navlinks">
+            <a href="../index.html">Home</a>
+            <a href="../HTML/college.html">Colleges</a>
+            <a href="../HTML/students.html">Students</a>
+            <a href="../HTML/companies.html" class="active">Companies</a>
+            <a href="../HTML/job-role.html">Job Roles</a>
+        </nav>
+    </header>
+
+    
+    <section id="company-container">
+        <table id="company-table">
+            <thead>
+                <tr>
+                    <th>Company ID</th>
+                    <th>Company Name</th>
+                    <th>Industry</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="company-body">
+                <!-- Rows injected by JS -->
+            </tbody>
+        </table>
+    </section>
+
+
+<script src="../JS/api.js"></script>
+<script src="../JS/companies.js"></script>
+</body>
+</html>
