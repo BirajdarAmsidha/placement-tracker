@@ -82,6 +82,27 @@
         </div>
     </div>
 </footer>
+<script>
+document.querySelectorAll('#main-container .card').forEach(card => {
+    card.addEventListener('click', () => {
+        switch(card.id) {
+            case 'Colleges':
+                window.location.href = '../HTML/college.html';
+                break;
+            case 'Students':
+                window.location.href = '../HTML/students.html';
+                break;
+            case 'Companies':
+                window.location.href = '../HTML/companies.html';
+                break;
+            case 'Jobs':
+                window.location.href = '../HTML/job-role.html';
+                break;
+        }
+    });
+});
+</script>
 
 </body>
 </html>
+
