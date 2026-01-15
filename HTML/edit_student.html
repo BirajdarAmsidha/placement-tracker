@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/edit_student.css">
+</head>
+<body>    
+    <header id="header">
+        <h1>PlacementTracker</h1>
+        <input type="search" placeholder="Search student/company">
+        <nav id="navlinks">
+            <a href="../HTML/index.html" class="active">Home</a>
+            <a href="../HTML/college.html">Colleges</a>
+            <a href="../HTML/students.html">Students</a>
+            <a href="../HTML/companies.html">Companies</a>
+            <a href="../HTML/job-role.html">Job Roles</a>
+        </nav>
+    </header>
+    <main>
+        <div id="edit-container">
+            <h2>Edit Student</h2>
+            <form id="Student_form">
+
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" id="fullName">
+                    <select id="gender">
+                        <option value="" disabled selected>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <input type="date" placeholder="Date of Birth" id="dob">
+                    <input type="number" placeholder="College ID" id="collegeId">
+                </div>
+
+                <div class="form-row">
+                    <input type="file" id="profileImage">
+                </div>
+
+                <div class="form-row">
+                    <input type="text" placeholder="Department" id="department">
+                    <input type="text" placeholder="Degree" id="degree">
+                </div>
+
+                <div class="form-row">
+                    <input type="number" placeholder="Graduation Year" id="graduationYear">
+                    <input type="number" placeholder="CGPA" step="0.01" id="cgpa">
+                </div>
+
+                <div class="form-row">
+                    <input type="number" placeholder="Backlogs" id="backlogs">
+                    <input type="text" placeholder="Programming Languages" id="programming">
+                    <input type="text" placeholder="Databases" id="databases">
+                    <input type="text" placeholder="Tools" id="tools">
+                </div>
+
+                <div class="form-row">
+                    <select id="placementStatus">
+                        <option value="" disabled selected>Placement Status</option>
+                        <option>Placed</option>
+                        <option>Not Placed</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" id="submitBtn">Add Student</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../JS/edit_student.js"></script>
+</body>
+</html>
